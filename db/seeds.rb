@@ -5,12 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-require 'faker'
-Ingredient.destroy_all
-puts "Creating ingredients"
-25.times do
-  ingredient = Ingredient.new(
-    name: Faker::Food.fruits
-  )
-  ingredient.save
-end
+Ingredient.create(name: "lemon")
+Ingredient.create(name: "ice")
+Ingredient.create(name: "mint leaves")
+Ingredient.create(name: "straberry")
+Ingredient.create(name: "Apple juice")
+Ingredient.create(name: "Rhum")
+Ingredient.create(name: "champagne")
+Ingredient.create(name: "Vodka")
+Ingredient.create(name: "Brown sugar")
+Ingredient.create(name: "pepper")
+Ingredient.create(name: "Cramberry Juice")
+Ingredient.create(name: "Orange juice")
+Ingredient.create(name: "Coca")
+

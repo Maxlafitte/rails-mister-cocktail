@@ -35,7 +35,7 @@ gem 'simple_form'
 gem 'faker', '~> 1.9.3'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-
+gem 'dotenv-rails', groups: [:development, :test]
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
