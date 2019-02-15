@@ -1,12 +1,24 @@
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
-
+  grid-gap: 20px;
   padding: 20px;
+  margin-top: 60px;
+}
+
+.cocktail-picture {
+  background-image: url();
 }
 .card-height {
   height: 250px;
+}
+.card-category {
+  box-shadow: 3px 2px 3px grey;
+  height: 320px;
+  margin: 15px;
+  display: flex;
+  align-item: center;
+  text-align: center;
 }
 
 // Smallest device

@@ -2,9 +2,14 @@
 ul {
   list-style-type: none;
 }
+li {
+  padding: 15px;
+  color: white;
+}
 a {
   text-decoration: none;
   color: white;
+  display: flex;
   &:hover{
   text-decoration: none;
   color: white;
@@ -13,4 +18,47 @@ a {
 }
 h1 {
   font-size: 30px;
+}
+.form-control {
+  width: 100%;
+}
+
+.title-page {
+  margin-bottom: 50px;
+  color: white;
+}
+
+form {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+.cocktail-picture {
+  // background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  padding: 200px;
+  display: flex;
+  align-item: center;
+  justify-content: start;
+}
+.cocktail-action {
+  display: flex;
+  justify-content: start;
+  padding: 10px;
+  a {
+    margin: 10px 20px;
+  }
+}
+.each-cocktail {
+  display: flex;
+  align-item: center;
+  justify-content: start;
+  padding: 40px;
+}
+.destroy {
+  color: white;
 }

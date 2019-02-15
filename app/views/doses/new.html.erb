@@ -1,6 +1,12 @@
-<h1>Add a dose to <%= @cocktail.name %></h1>
-<%= simple_form_for [@cocktail, @ingredient, @dose] do |f| %>
-  <%= f.input :description %>
-  <%= f.association :ingredient %>
-  <%= f.button :submit %>
-<% end %>
+<div class="banner align-item" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://cms.splendidtable.org/sites/default/files/styles/w2000/public/blt%20cocktail.jpg?itok=uv_d_Mjo);">
+  <div class="container">
+    <h2 class="text-center title-page">Add a dose to <%= @cocktail.name %></h2>
+    <div class="new-cocktail-form text-center">
+      <%= simple_form_for [@cocktail, @ingredient, @dose] do |f| %>
+        <%= f.input :description %>
+        <%= f.association :ingredient %>
+        <%= f.button :submit, class: "btn btn-primary btn-size" %>
+      <% end %>
+    </div>
+  </div>
+</div>

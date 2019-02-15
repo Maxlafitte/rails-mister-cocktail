@@ -1,4 +1,16 @@
-<%= simple_form_for @cocktail do |f| %>
-  <%= f.input :name %>
-  <%= f.submit "Add a cocktail", class: "btn btn-primary" %>
-<% end %>
+<div class="banner align-item" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://cms.splendidtable.org/sites/default/files/styles/w2000/public/blt%20cocktail.jpg?itok=uv_d_Mjo);">
+<div class="container">
+    <h2 class="text-center title-page">Add a Cocktail Name</h2>
+    <div class="new-cocktail-form text-center">
+      <%= simple_form_for @cocktail do |f| %>
+        <%= f.input :name %>
+        <%= f.submit "Add a cocktail", class: "btn btn-primary btn-size" %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+
+
+

@@ -1,12 +1,26 @@
-<h1><%= @cocktail.name %></h1>
-<ul>
-  <%  @cocktail.doses.each do |dose| %>
-    <li>
-      <%= dose.description %> of <%= dose.ingredient.name %> <%= link_to 'Delete',
-      cocktail_dose_path(@cocktail.id, dose.id), method: :delete %>
-    </li>
-  <% end %>
-</ul>
-<%= link_to 'Back to Cocktails List', cocktails_path, class: "btn btn-primary" %>
-<br>
-<%= link_to 'Add a dose', new_cocktail_dose_path(@cocktail.id), class: "btn btn-primary" %>
+<div class=" cocktail-show cocktail-picture" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://cms.splendidtable.org/sites/default/files/styles/w2000/public/blt%20cocktail.jpg?itok=uv_d_Mjo);" >
+  <div class="container">
+    <div class="each-cocktail">
+      <div class="cocktail-title">
+        <h2><%= @cocktail.name %></h2>
+      </div>
+      <div class="dose-desc">
+        <ul>
+          <%  @cocktail.doses.each do |dose| %>
+            <li>
+              <%= dose.description %> of <%= dose.ingredient.name %> <%= link_to 'Delete',
+              cocktail_dose_path(@cocktail.id, dose.id), method: :delete, class: "destroy" %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+    <div class="cocktail-action">
+      <%= link_to 'Back to Cocktails List', cocktails_path, class: "btn btn-primary" %>
+      <br>
+      <%= link_to 'Add a dose', new_cocktail_dose_path(@cocktail.id), class: "btn btn-primary" %>
+    </div>
+  </div>
+</div>
+
+

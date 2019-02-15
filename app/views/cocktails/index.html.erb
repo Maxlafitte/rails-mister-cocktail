@@ -7,12 +7,11 @@
 <div class="container">
   <div class="cards">
     <% @cocktails.each do |cocktail| %>
-    <ul>
-      <div class="card-category card-height text-center center-block" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-        <li class="text-center"><%= link_to cocktail.name, cocktail_path(cocktail.id) %></li>
-      </div>
-    </ul>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.atelierdeschefs.com/media/recette-e7517-cocktail-blue-lagoon.jpg)">
+        <p class="text-center align-item card">
+            <%= link_to cocktail.name, cocktail_path(cocktail.id) %>
+        </p>
+  </div>
     <% end %>
   </div>
-
 </div>
