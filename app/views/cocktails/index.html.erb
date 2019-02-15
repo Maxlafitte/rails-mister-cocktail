@@ -1,7 +1,18 @@
-<h1>Cocktails</h1>
-<ul>
-  <% @cocktails.each do |cocktail| %>
-    <li><%= link_to cocktail.name, cocktail_path(cocktail.id) %></li>
-  <% end %>
-</ul>
-<%= link_to 'Add a Cocktail', new_cocktail_path, class: "btn btn-primary" %>
+<div class="banner align-item" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://assets.punchdrink.com/wp-content/uploads/2016/11/Recipe-How-to-Make-a-Negroni-Campari-Cocktail-Recipe-Ratio-Naren-Young-Dante-NYC.jpg);">
+  <div class="text-center">
+    <h1>Cocktails</h1>
+    <%= link_to 'Add a Cocktail', new_cocktail_path, class: "btn btn-primary" %>
+  </div>
+</div>
+<div class="container">
+  <div class="cards">
+    <% @cocktails.each do |cocktail| %>
+    <ul>
+      <div class="card-category card-height text-center center-block" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+        <li class="text-center"><%= link_to cocktail.name, cocktail_path(cocktail.id) %></li>
+      </div>
+    </ul>
+    <% end %>
+  </div>
+
+</div>

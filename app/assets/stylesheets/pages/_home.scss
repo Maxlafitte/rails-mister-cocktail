@@ -1,1 +1,16 @@
 // Specific CSS for your home-page
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+  &:hover{
+  text-decoration: none;
+  color: white;
+  opacity: 0.8;
+  }
+}
+h1 {
+  font-size: 30px;
+}
